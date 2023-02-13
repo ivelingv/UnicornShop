@@ -1,0 +1,11 @@
+C:\Users\Ivelin.Georgiev\source\repos\UnicornShop\UnicornShop.Application\bin\Debug\net5.0\UnicornShop.Application.deps.json
+C:\Users\Ivelin.Georgiev\source\repos\UnicornShop\UnicornShop.Application\bin\Debug\net5.0\UnicornShop.Application.dll
+C:\Users\Ivelin.Georgiev\source\repos\UnicornShop\UnicornShop.Application\bin\Debug\net5.0\ref\UnicornShop.Application.dll
+C:\Users\Ivelin.Georgiev\source\repos\UnicornShop\UnicornShop.Application\bin\Debug\net5.0\UnicornShop.Application.pdb
+C:\Users\Ivelin.Georgiev\source\repos\UnicornShop\UnicornShop.Application\obj\Debug\net5.0\UnicornShop.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivelin.Georgiev\source\repos\UnicornShop\UnicornShop.Application\obj\Debug\net5.0\UnicornShop.Application.AssemblyInfoInputs.cache
+C:\Users\Ivelin.Georgiev\source\repos\UnicornShop\UnicornShop.Application\obj\Debug\net5.0\UnicornShop.Application.AssemblyInfo.cs
+C:\Users\Ivelin.Georgiev\source\repos\UnicornShop\UnicornShop.Application\obj\Debug\net5.0\UnicornShop.Application.csproj.CoreCompileInputs.cache
+C:\Users\Ivelin.Georgiev\source\repos\UnicornShop\UnicornShop.Application\obj\Debug\net5.0\UnicornShop.Application.dll
+C:\Users\Ivelin.Georgiev\source\repos\UnicornShop\UnicornShop.Application\obj\Debug\net5.0\ref\UnicornShop.Application.dll
+C:\Users\Ivelin.Georgiev\source\repos\UnicornShop\UnicornShop.Application\obj\Debug\net5.0\UnicornShop.Application.pdb
