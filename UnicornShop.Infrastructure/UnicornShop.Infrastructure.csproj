@@ -8,7 +8,7 @@
     <ProjectReference Include="..\UnicornShop.Application\UnicornShop.Application.csproj" />
   </ItemGroup>
 
-	<ItemGroup>
+	<ItemGroup>		
 		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Database\Mappings\" />
-    <Folder Include="Database\Configuration\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
 

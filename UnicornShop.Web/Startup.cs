@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UnicornShop.Infrastructure.Database.Configuration;
 
 namespace UnicornShop.Web
 {
@@ -23,6 +24,7 @@ namespace UnicornShop.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDatabase("Data Source=main.db", typeof(ApplicationConfiguration).Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,7 +41,7 @@ namespace UnicornShop.Web
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -48,6 +50,9 @@ namespace UnicornShop.Web
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+
+            app.
         }
     }
 }
