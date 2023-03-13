@@ -2,7 +2,7 @@
 
 namespace UnicornShop.Application.Models
 {
-    public class ShoppingCart
+    public class ShoppingCart : IDatabaseModel
     {
         public virtual long? Id { get; protected internal set; }
         public virtual decimal TotalPrice { get; protected internal set; }

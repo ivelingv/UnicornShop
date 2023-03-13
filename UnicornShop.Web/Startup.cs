@@ -13,9 +13,14 @@ namespace UnicornShop.Web
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IWebHostEnvironment env)
         {
-            Configuration = configuration;
+            Configuration = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile("appsettings." + env.EnvironmentName + ".json", optional: true)
+                .AddEnvironmentVariables()
+                .Build();
         }
 
         public IConfiguration Configuration { get; }

@@ -3,7 +3,7 @@
     /// <summary>
     /// Get ShoppingCart Item.Product.Name
     /// </summary>
-    public class ShoppingCartItem
+    public class ShoppingCartItem : IDatabaseModel
     {
         public virtual long? Id { get; protected internal set; }
         public virtual long? ProductId { get; protected internal set; }

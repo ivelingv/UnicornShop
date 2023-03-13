@@ -18,6 +18,9 @@ namespace UnicornShop.Infrastructure.Database.Configuration
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Price> Prices { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

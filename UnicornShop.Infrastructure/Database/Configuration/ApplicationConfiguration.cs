@@ -34,6 +34,8 @@ namespace UnicornShop.Infrastructure.Database.Configuration
                 });
             });
 
+            services.AddRepositories();
+
             return services;
         }
 
@@ -42,6 +44,9 @@ namespace UnicornShop.Infrastructure.Database.Configuration
         {
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IPriceReposity, PriceReposity>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IShoppingCartItemRepository, ShoppingCartItemRepository>();
+            services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
 
             return services;
         }
