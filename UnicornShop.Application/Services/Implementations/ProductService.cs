@@ -30,6 +30,8 @@ namespace UnicornShop.Application.Services.Implementations
         public async Task<long?> CreateProductAsync(
             CreateProductDTO createProduct)
         {
+            //var product = _mapper.Map<Product>(createProduct);
+
             var price = new Price(
                 createProduct.PriceAmount,
                 createProduct.PriceCurrency);
