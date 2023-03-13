@@ -45,6 +45,16 @@ namespace UnicornShop.Infrastructure.Repositories
                 .ToListAsync();
         }
 
+        public async Task<bool> IsProductUniqueAsync(string name)
+        {
+            var exists = await _context.Products.AsQueryable()
+                .Where(e => e.Name == name)
+                .Select(e => true)
+                .AnyAsync();
+
+            return !exists;
+        }
+
         public async Task<long?> SaveAsync(Product entity)
         {
             await _context.Products.AddAsync(entity);
