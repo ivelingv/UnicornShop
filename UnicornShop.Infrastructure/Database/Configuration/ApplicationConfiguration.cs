@@ -7,6 +7,8 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using UnicornShop.Application.Services.Interfaces;
+using UnicornShop.Infrastructure.Repositories;
 
 namespace UnicornShop.Infrastructure.Database.Configuration
 {
@@ -31,6 +33,15 @@ namespace UnicornShop.Infrastructure.Database.Configuration
                     e.Default(WarningBehavior.Log);
                 });
             });
+
+            return services;
+        }
+
+        public static IServiceCollection AddRepositories(
+            this IServiceCollection services)
+        {
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IPriceReposity, PriceReposity>();
 
             return services;
         }
